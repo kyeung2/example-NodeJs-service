@@ -4,6 +4,12 @@ creating a simple NodeJs service to compare with different frameworks
 
 
 
+
+
+random notes:
+
+TODO improve this.
+
 However, if your server relies heavily on complex calculations, you should think about whether Node is really a good fit. Node excels for I/O-bound work, but for expensive computation it might not be the best option.
 
 
