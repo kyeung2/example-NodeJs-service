@@ -13,10 +13,16 @@
     "url": "https://github.com/kyeung2/example-nodejs-service.git"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint . --fix"
   },
   "dependencies": {
-    "express": "~4.16.1",
-    "mongoose": "~4.11.14"
+    "express": "4.16.1",
+    "mongoose": "4.11.14"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0"
   }
 }
