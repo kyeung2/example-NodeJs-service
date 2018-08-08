@@ -1,6 +1,6 @@
 {
   "name": "library",
-  "version": "1.0-SNAPSHOT",
+  "version": "0.1.0-SNAPSHOT",
   "private": true,
   "main": "index.js",
   "homepage": "https://github.com/kyeung2/example-nodejs-service",
