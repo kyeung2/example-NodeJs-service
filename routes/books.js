@@ -1,8 +1,9 @@
 const router = require('express').Router();
-const stubs = require('../stubs/stubs');
+const mongo = require('../modules/mongo');
 
-
-router.get('/', (req, res) => res.json([stubs.book1, stubs.book2, stubs.book3]));
-
+router.get('/', (req, res) => mongo.findAll((err, books) => {
+  if (err) res.status(400).send(err);
+  res.json(books);
+}));
 
 module.exports = router;
