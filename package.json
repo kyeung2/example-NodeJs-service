@@ -12,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/kyeung2/example-nodejs-service.git"
   },
+  "engines": {
+    "node": "8.11.3"
+  },
   "scripts": {
     "start": "node index.js",
     "lint": "eslint .",
