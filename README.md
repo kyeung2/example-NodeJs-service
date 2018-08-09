@@ -10,6 +10,12 @@ random notes:
 
 TODO improve this.
 
+
+
+external local Mongo is probably better https://hub.docker.com/_/mongo/
+
+add instructions here as well.
+
 However, if your server relies heavily on complex calculations, you should think about whether Node is really a good fit. Node excels for I/O-bound work, but for expensive computation it might not be the best option.
 
 
