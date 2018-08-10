@@ -1,27 +1,30 @@
 # example-NodeJs-service
-creating a simple NodeJs service to compare with different frameworks
+A simple NodeJs service to compare with different frameworks
 
+A single endpoint which retrieves data from a Mongo
 
+`curl -X GET http://localhost:8080/books`
 
+**Stack:**
+- NodeJs
+- Express
+- Mongoose
 
+### Setup Mongo
 
+You can also setup a local Mongo running from a local [Docker](https://www.docker.com/docker-mac) image. Pull the [Mongo image](https://hub.docker.com/_/mongo/) and run remembering to use the **-p** option to the port. e.g:
 
-random notes:
+`docker run -p 27017:27017 --name some-mongo mongo`
 
-TODO improve this.
-
-
-
-external local Mongo is probably better https://hub.docker.com/_/mongo/
-
-add instructions here as well.
-
-However, if your server relies heavily on complex calculations, you should think about whether Node is really a good fit. Node excels for I/O-bound work, but for expensive computation it might not be the best option.
-
-
+### NodeJs features
+* event-loop execution model:
+    - asynchronous and non-blocking IO
+    - single threaded
+    - different styles to unblock event loop, callbacks, promises and async/await
+* notes:
+    - [dont-block-the-event-loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
+    - parallelism by multiple processes
+    - Node excels for I/O-bound work, but for expensive computation it might not be the best option.
 
 links:
 [event-loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
-[dont-block-the-event-loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
-
-
