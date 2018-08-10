@@ -17,7 +17,7 @@ You can also setup a local Mongo running from a local [Docker](https://www.docke
 `docker run -p 27017:27017 --name some-mongo mongo`
 
 ### NodeJs features
-* event-loop execution model:
+* [event-loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/) execution model:
     - asynchronous and non-blocking IO
     - single threaded
     - different styles to unblock event loop, callbacks, promises and async/await
@@ -25,6 +25,3 @@ You can also setup a local Mongo running from a local [Docker](https://www.docke
     - [dont-block-the-event-loop](https://nodejs.org/en/docs/guides/dont-block-the-event-loop/)
     - parallelism by multiple processes
     - Node excels for I/O-bound work, but for expensive computation it might not be the best option.
-
-links:
-[event-loop](https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/)
